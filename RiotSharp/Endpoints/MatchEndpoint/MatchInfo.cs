@@ -11,7 +11,7 @@ namespace RiotSharp.Endpoints.MatchEndpoint
     /// </summary>
     public class MatchInfo
     {
-        internal MatchInfo() { }
+        public MatchInfo() { }
 
         /// <summary>
         /// The date time of the game creation.

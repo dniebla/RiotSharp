@@ -376,8 +376,8 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// <summary>
         /// Riot id name.
         /// </summary>
-        [JsonProperty("riotIdName")]
-        public string RiotIdName { get; set; }
+        [JsonProperty("riotIdGameName")]
+        public string RiotIdGameName { get; set; }
 
         /// <summary>
         /// Riot id tagline.

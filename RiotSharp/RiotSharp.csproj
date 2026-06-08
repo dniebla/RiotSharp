@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>RiotSharp</PackageId>
-    <VersionPrefix>6.0.1</VersionPrefix>
+    <VersionPrefix>6.0.2</VersionPrefix>
     <Authors>BenFradet</Authors>
     <Description>C# Wrapper for the Riot Games API</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

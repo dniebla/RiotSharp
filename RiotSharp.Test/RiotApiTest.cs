@@ -148,6 +148,20 @@ namespace RiotSharp.Test
 
         [TestMethod]
         [TestCategory("RiotApi"), TestCategory("Async")]
+        public void GetLeagueEntriesByPuuidAsync_ProperlyImplementEncryptedPuuid_ReturnTrue()
+        {
+            EnsureCredibility(() =>
+            {
+                // TODO: Properly implement encrypted PUUID tests
+                return;
+                var leagues = Api.League.GetLeagueEntriesByPuuidAsync(RiotApiTestBase.SummonersPlatform, RiotApiTestBase.SummonerIds.FirstOrDefault());
+
+                Assert.IsTrue(leagues.Result.Count > 0);
+            });
+        }
+
+        [TestMethod]
+        [TestCategory("RiotApi"), TestCategory("Async")]
         public void GetLeagueByIdAsync_ProperlyImplementLeagueId_ReturnTrue()
         {
             EnsureCredibility(() =>

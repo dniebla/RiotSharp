@@ -45,6 +45,13 @@ namespace RiotSharp.Endpoints.Interfaces
         Task<List<LeagueEntry>> GetLeagueEntriesBySummonerAsync(Region region, string encryptedSummonerId);
 
         /// <summary>
+        /// Used to retrieve a list of <see cref="LeagueEntry"/> for the given <paramref name="encryptedSummonerId"/>.
+        /// </summary>
+        /// <param name="region">The region</param>
+        /// <param name="encryptedPuuid">The encrypted PUUID</param>
+        Task<List<LeagueEntry>> GetLeagueEntriesByPuuidAsync(Region region, string encryptedPuuid);
+
+        /// <summary>
         /// Used to retrieve information about the provided <paramref name="leagueId"/>.
         /// <para/>
         /// Warning: Consistently looking up league ids that don't exist will result in a blacklist.

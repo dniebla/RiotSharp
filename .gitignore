@@ -7,3 +7,4 @@ TestResults/
 .vs/
 project.lock.json
 .vscode/
+.fake
